@@ -105,8 +105,6 @@ namespace Leap.Interact
     [HideInInspector]
     public float scale = 1.0f;
 
-	public Grabbable grabbable;
-
 
     private bool m_started = false;
 
@@ -187,11 +185,10 @@ namespace Leap.Interact
       InteractionSceneSetup.EnsureInstanceInitialized();
       AddRemoveBodyUtil.Instance.AddBodyToLeapFromUnity(rigidbody);
       m_started = true;
-	  grabbable = this.GetComponent<Grabbable> ();
-	  Debug.Log (grabbable.grabbed);
     }
     
     void Update () {
+
     }
 
     void OnEnable() {
