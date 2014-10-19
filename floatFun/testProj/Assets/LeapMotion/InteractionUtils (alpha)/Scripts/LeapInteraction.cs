@@ -124,6 +124,7 @@ namespace Leap.Interact
 						scale = 1.0f;
 				private Controller controller;
 				private bool m_started = false;
+				private Vector3 itemScale;
 
 				public void ApplyToBody (Body body)
 				{
@@ -219,6 +220,7 @@ namespace Leap.Interact
 						AddRemoveBodyUtil.Instance.AddBodyToLeapFromUnity (rigidbody);
 						m_started = true;
 						controller = new Controller();
+						itemScale = this.transform.localScale;
 				}
     
 				void Update ()
@@ -226,6 +228,17 @@ namespace Leap.Interact
 					if(controller.IsConnected) //controller is a Controller object
 					{
 						Frame frame = controller.Frame(); //The latest frame
+						HandList hands = frame.Hands;
+						if(hands.Count > 1 && isGrabbed == true)
+						{
+							Hand leftHand = hands.Leftmost;
+							Hand rightHand = hands.Rightmost;
+							if(leftHand.GrabStrength > 0.5f && rightHand.GrabStrength > 0.5f)
+							{
+								Vector3 handDistance = rightHand.PalmPosition - leftHand.PalmPosition;
+								this.transform.localScale = new Vector3(itemScale.x * 2, itemScale.y * 2, itemScale.z * 2);
+							}
+						}
 					}
 				}
 
