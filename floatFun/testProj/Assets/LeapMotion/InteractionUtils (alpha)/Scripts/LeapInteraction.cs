@@ -125,7 +125,8 @@ namespace Leap.Interact
 				private Controller controller;
 				private bool m_started = false;
 				private Vector3 itemScale;
-
+				private Vector3 itemLength;
+			
 				public void ApplyToBody (Body body)
 				{
 						switch (HandlingMode) {
@@ -219,27 +220,32 @@ namespace Leap.Interact
 						InteractionSceneSetup.EnsureInstanceInitialized ();
 						AddRemoveBodyUtil.Instance.AddBodyToLeapFromUnity (rigidbody);
 						m_started = true;
-						controller = new Controller();
+						controller = new Controller ();
 						itemScale = this.transform.localScale;
+						Vector3 size = this.GetComponent<MeshFilter> ().sharedMesh.bounds.size;
+						Vector3 scale = this.transform.localScale;
+						itemLength = new Vector3 (size.x * scale.x, size.y * scale.y, size.z * scale.z);
 				}
-    
+		
 				void Update ()
 				{
-					if(controller.IsConnected) //controller is a Controller object
-					{
-						Frame frame = controller.Frame(); //The latest frame
-						HandList hands = frame.Hands;
-						if(hands.Count > 1 && isGrabbed == true)
-						{
-							Hand leftHand = hands.Leftmost;
-							Hand rightHand = hands.Rightmost;
-							if(leftHand.GrabStrength > 0.5f && rightHand.GrabStrength > 0.5f)
-							{
-								Vector3 handDistance = rightHand.PalmPosition - leftHand.PalmPosition;
-								this.transform.localScale = new Vector3(itemScale.x * 2, itemScale.y * 2, itemScale.z * 2);
-							}
+						if (controller.IsConnected) { //controller is a Controller object
+								Frame frame = controller.Frame (); //The latest frame
+								HandList hands = frame.Hands;
+								if (hands.Count > 1 && isGrabbed == true) {
+										Hand leftHand = hands.Leftmost;
+										Hand rightHand = hands.Rightmost;
+										if (leftHand.GrabStrength > 0.7f && rightHand.GrabStrength > 0.7f) {
+												var leapHandDistance = rightHand.PalmPosition - leftHand.PalmPosition;
+												Vector3 handDistance = new Vector3 (leapHandDistance.x, leapHandDistance.y, leapHandDistance.z);
+												if(handDistance.x + handDistance.y < 1e-2)
+													Debug.Log ("Ded.");
+												this.transform.localScale = new Vector3 (itemScale.x + Mathf.Abs(handDistance.x/itemLength.x)*2, 
+												                                         itemScale.y + Mathf.Abs(handDistance.y/itemLength.y)*2, 
+												                                         itemScale.z);
+										}
+								}
 						}
-					}
 				}
 
 				void OnEnable ()
