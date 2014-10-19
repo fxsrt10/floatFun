@@ -122,6 +122,7 @@ namespace Leap.Interact
 				[HideInInspector]
 				public float
 						scale = 1.0f;
+				private bool flaggedForDeletion = false;
 				private Controller controller;
 				private bool m_started = false;
 				private Vector3 itemScale;
@@ -238,14 +239,17 @@ namespace Leap.Interact
 										if (leftHand.GrabStrength > 0.7f && rightHand.GrabStrength > 0.7f) {
 												var leapHandDistance = rightHand.PalmPosition - leftHand.PalmPosition;
 												Vector3 handDistance = new Vector3 (leapHandDistance.x, leapHandDistance.y, leapHandDistance.z);
-												if(handDistance.x + handDistance.y < 1e-2)
-													Debug.Log ("Ded.");
-												this.transform.localScale = new Vector3 (itemScale.x + Mathf.Abs(handDistance.x/itemLength.x)*2, 
-												                                         itemScale.y + Mathf.Abs(handDistance.y/itemLength.y)*2, 
+												Debug.Log (handDistance.x + handDistance.y);
+												if (handDistance.x + handDistance.y < 75f)
+														flaggedForDeletion = true;
+												this.transform.localScale = new Vector3 (itemScale.x + Mathf.Abs (handDistance.x + handDistance.y / itemLength.x) * 2, 
+						                                         itemScale.y + Mathf.Abs (handDistance.x + handDistance.y / itemLength.y) * 2, 
 												                                         itemScale.z);
 										}
 								}
 						}
+						if (flaggedForDeletion && !isGrabbed)
+								DestroyObject(this);
 				}
 
 				void OnEnable ()
