@@ -90,6 +90,9 @@ namespace Leap.Interact
     [HideInInspector]
     public bool CollisionsWithHandFilteredOut = false;
 
+	[HideInInspector]
+	public bool isGrabbed = false;
+
     public Body.HandAnchorType HandAnchorType = Body.HandAnchorType.DefaultHoldingAnchor;
 
     public bool GenerateAnchors = false;
@@ -182,6 +185,14 @@ namespace Leap.Interact
 
       body.SetMagneticStrength(StrengthFactor);
     }
+	
+	public void OnGrab(){
+		isGrabbed = true;
+	}
+	
+	public void OnRelease(){
+		isGrabbed = false;
+	}
 
     void Start () {
       InteractionSceneSetup.EnsureInstanceInitialized();

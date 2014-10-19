@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Leap;
+using Leap.Interact;
 
 public class lockRotation : MonoBehaviour {
 
 	private Controller controller;
+	private LeapInteraction leapInteraction;
 	// Use this for initialization
 	void Start () {
+		leapInteraction = this.GetComponent<LeapInteraction> ();
 		controller = new Controller();
 		controller.EnableGesture(Gesture.GestureType.TYPE_SCREEN_TAP);
 		controller.Config.SetFloat("Gesture.ScreenTap.MinForwardVelocity", 30.0f);
@@ -26,6 +29,7 @@ public class lockRotation : MonoBehaviour {
 		/*HandList hands = frame.Hands;
 		Hand firstHand = hands[0];
 		if(firstHand.GrabStrength == 0.0f)*/
-		this.GetComponent<Transform>().rotation = Quaternion.identity;
+		if(!leapInteraction.isGrabbed)
+			this.GetComponent<Transform>().rotation = Quaternion.identity;
 	}
 }
