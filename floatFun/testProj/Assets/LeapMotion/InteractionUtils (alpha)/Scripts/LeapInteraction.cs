@@ -248,8 +248,10 @@ namespace Leap.Interact
 										}
 								}
 						}
-						if (flaggedForDeletion && !isGrabbed)
-								DestroyObject(this);
+						if (flaggedForDeletion && !isGrabbed) {
+								AddRemoveBodyUtil.Instance.RemoveBodyFromLeap (rigidbody);
+								DestroyObject (this);
+						}
 				}
 
 				void OnEnable ()
