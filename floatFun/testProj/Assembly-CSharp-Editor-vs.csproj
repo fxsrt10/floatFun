@@ -55,167 +55,32 @@
      <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
      <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
      <Compile Include="Assets\OVR\Editor\OVRUGUIEditor.cs" />
-<<<<<<< HEAD
-=======
-     <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
-     <None Include="Assets\LeapMotion\readme.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\DoubleSided.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
-     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
-     <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
-     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\DoubleSided ButterFly.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseDoublesided.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
-     <None Include="Assets\LeapMotion\Shaders\LeapDistorted.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
-     <None Include="Assets\LeapMotion\Shaders\LeapUndistorted.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
-     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseBack.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
->>>>>>> parent of 6b643aa... Added Steven's code.
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
- <Reference Include="Autofac">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Autofac.3.3.1/lib/net40/Autofac.dll</HintPath>
- </Reference>
-<<<<<<< HEAD
- <Reference Include="Microsoft.Threading.Tasks">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Async.1.0.165/lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Threading.Tasks.Extensions">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Async.1.0.165/lib/portable-net40+sl4+win8+wp71/Microsoft.Threading.Tasks.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Newtonsoft.Json.6.0.4/lib/netcore45/Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="PCLWebUtility">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/PCLWebUtility.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http.Formatting">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.AspNet.WebApi.Client.5.2.2/lib/net45/System.Net.Http.Formatting.dll</HintPath>
- </Reference>
- <Reference Include="Tweetinvi.Controllers">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Controllers.dll</HintPath>
- </Reference>
  <Reference Include="Tweetinvi.Core">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.Core.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Core.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.Credentials">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.Credentials.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Credentials.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.Factories">
  <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Factories.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.Logic">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.Logic.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Logic.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.Security">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.Security.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Security.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.Streams">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.Streams.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.Streams.dll</HintPath>
  </Reference>
  <Reference Include="Tweetinvi.WebLogic">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/ApiTest/bin/Debug/Tweetinvi.WebLogic.dll</HintPath>
- </Reference>
- <Reference Include="DevDefined.OAuth">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/DevDefined.OAuth.0.2/lib/DevDefined.OAuth.dll</HintPath>
- </Reference>
- <Reference Include="System.IO">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.1.1.7/lib/portable-net40+sl4+win8/System.IO.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.1.1.7/lib/portable-net40+win8/System.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Tasks">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.1.1.7/lib/portable-net40+sl4+win8/System.Threading.Tasks.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Async.1.0.165/lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Threading.Tasks.Extensions.Silverlight">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Async.1.0.165/lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Threading.Tasks.Extensions.Phone">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Async.1.0.165/lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.Bcl.Build.Tasks">
- <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/Microsoft.Bcl.Build.1.0.14/tools/Microsoft.Bcl.Build.Tasks.dll</HintPath>
+ <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/packages/TweetinviAPI.0.9.3.4/lib/Tweetinvi.WebLogic.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
  <HintPath>C:/Users/Pico/Documents/GitHub/floatFun/floatFun/testProj/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
@@ -223,8 +88,10 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
-=======
->>>>>>> parent of 6b643aa... Added Steven's code.
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{0ECD0F53-9A9E-CC37-EC16-33716F546186}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
