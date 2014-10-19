@@ -47,20 +47,34 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LeapMotion\Editor\HandControllerEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRCameraControllerEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRDeviceEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVREditorGUIUtility.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRPlayerControllerEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRUGUIEditor.cs" />
      <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\TransparentTerrain.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 3.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 1.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\Particle Alpha Blend_IgnoreFog.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 5.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
@@ -70,9 +84,12 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 6.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\DoubleSided.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
@@ -85,6 +102,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Tuscany\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
@@ -95,9 +113,11 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\DoubleSided ButterFly.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseDoublesided.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
@@ -107,12 +127,17 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 4.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\AddSmooth_Layer.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 8.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 2.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
@@ -121,8 +146,11 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 7.shader" />
      <None Include="Assets\LeapMotion\Shaders\LeapUndistorted.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\Add_Layer.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseBack.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
@@ -140,6 +168,8 @@
       <Project>{A3ECE1E0-FE49-9EAE-743C-D4ED5DBA6899}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{04B8C421-1EFB-B12B-3759-587CDB323F45}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{647A7A47-B897-5F6A-6681-BDF1786429EC}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
